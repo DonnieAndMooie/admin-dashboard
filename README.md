@@ -1,1 +1,1 @@
-# admin-dashboard
+The aim of this project is to create a dashboard page using CSS Grid
