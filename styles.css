@@ -31,6 +31,8 @@ body{
     grid-column: 1 / 2;
     display: grid;
     grid-template-rows: 50px 1fr;
+    position:sticky;
+    top:0;
 }
 
 .header{
@@ -39,6 +41,9 @@ body{
     grid-column: 2 / 3;
     display: grid;
     grid-template-rows: 1fr 1fr;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    position: relative;
+    z-index: 10;
 }
 
 .main{
@@ -88,9 +93,11 @@ body{
 
 .header-top{
     display: grid;
-    grid-template-columns: 1fr 120px;
+    grid-template-columns: 1fr 50px 50px 120px;
+    grid-template-rows: 1fr;
     padding: 30px;
     align-items: center;
+    gap: 10px;
 }
 
 .search{
@@ -99,7 +106,7 @@ body{
 
 .header-bottom{
     display: grid;
-    grid-template-columns: 4fr 1fr 1fr 1fr;
+    grid-template-columns: 50px 4fr 1fr 1fr 1fr;
     padding: 20px;
     gap: 40px;
 }
@@ -187,4 +194,47 @@ img{
 
 .dashboard{
     height: 50px;
+}
+
+.search-div{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+}
+
+input[type="search"]{
+    border-radius: 5px;
+    background-color: lightgray;
+    border: none;
+    height: 25px;
+}
+
+.notifications{
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+
+.profile-pic{
+    height: 50px;
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+}
+
+.profile-pic-big{
+    height: 75px;
+}
+
+.name-large{
+    font-size: 24px;
+}
+
+button{
+    background-color: rgba(28, 40, 245, 0.8);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    height: 50px;
+    padding: 10px;
+    font-size: 18px;
 }
